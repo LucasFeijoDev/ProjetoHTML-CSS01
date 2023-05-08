@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurveyForm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <section>
 
+        <h1 id="title">
+            Título
+        </h1>
+
+        <p id="description">
+            Descrição da minha página.
+        </p>
+
+    </section>
+
+    <section id="questionsForm">
+        <form id="survey-form">
+    <fieldset>
+
+                <label id="name-label" for="name">What's is your name? <input id="name" type="text" required placeholder="Put your name here." /></label>
+                <label id="email-label" for="email">What's is youur email? <input id="email" type="email" placeholder="Put your email here." required /></label>
+                <label id="number-label" for="number">What's is your number? <input id="number" type="number" min="2" max="6" placeholder="Put your number here." /></label>
+                <label for="dropdown"> Where are you from?
+                    <select id="dropdown">
+                        <option>Choose one</option>
+                        <option>From Brazil</option>
+                        <option>Outside Brazil</option>
+                    </select>
+                </label> 
+                <label>
+                    Tell me about you: <textarea></textarea>
+                </label>
+    </fieldset>
+
+    <fieldset>
+
+        <label for="acceptButtom">
+            <input id="accpetButtom" name="acceptButtom" value="terms" type="checkbox" required />
+            Accept the terms and condition.
+        </label>
+        <label for="email">
+            <input id="email" name="email" value="news" type="checkbox" required />
+            You want revice news in email?
+        </label>
+
+        <lebal for="yes/no"> Do you know how code? (opitional)
+            <input type="radio" name="yes/no" value="no" /> No
+            <input type="radio" name="yes/no" value="yes" /> Yes
+        </lebal>
+         
+    </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+        </form>
+    </section>
+
+</body>
+</html>
